@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".DishesActivity">
 
+    <TextView
+        android:id="@+id/mainDishTitle"
+        android:layout_width="138dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dishRecycleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainDishTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
