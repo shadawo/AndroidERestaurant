@@ -22,9 +22,13 @@ class DishesActivity : AppCompatActivity() {
         val data= ArrayList<String>()
 
         for(i in 1..20){
-            data.add("Item"+i)
+            data.add("Item$i")
         }
-        val adapter = DishAdapter(data)
+        val adapter = DishAdapter(data){
+            val intent = Intent(this,DetailActivity :: class.java)
+            intent.putExtra("dish",it)
+            startActivity(intent)
+        }
         binding.dishRecycleView.adapter=adapter
     }
 }
