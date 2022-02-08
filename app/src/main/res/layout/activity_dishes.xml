@@ -8,25 +8,28 @@
 
     <TextView
         android:id="@+id/mainDishTitle"
-        android:layout_width="138dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="52dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/teal_700"
-        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:scaleX="5
+"
+        android:scaleY="5"
+        android:text="Dish Title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/dishRecycleView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:id= "@+id/dishRecycleView"
+        android:layout_width="404dp"
+        android:layout_height="516dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainDishTitle" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
 </androidx.constraintlayout.widget.ConstraintLayout>

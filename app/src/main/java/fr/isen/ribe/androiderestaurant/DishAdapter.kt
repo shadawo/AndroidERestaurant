@@ -3,13 +3,18 @@ package fr.isen.ribe.androiderestaurant
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
+import fr.isen.ribe.androiderestaurant.models.DishModel
 
-class DishAdapter(private val dishes: List<String>,val onDishClicked:(String)->Unit) : RecyclerView.Adapter<DishAdapter.DishViewHolder>(){
+class DishAdapter(private val dishes: List<DishModel>,val onDishClicked:(DishModel)->Unit) : RecyclerView.Adapter<DishAdapter.DishViewHolder>(){
 
     class DishViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val textView: TextView = view.findViewById(R.id.textDishView)
+        val dishNameView: TextView = view.findViewById(R.id.dishNameView)
+        val dishPriceView: TextView=view.findViewById(R.id.dishPriceView)
+        val dishPicView: ImageView=view.findViewById(R.id.dishPicView)
 
     }
 
@@ -22,7 +27,17 @@ class DishAdapter(private val dishes: List<String>,val onDishClicked:(String)->U
     }
 
     override fun onBindViewHolder(holder: DishViewHolder, position: Int) {
-        holder.textView.text = dishes[position]
+        holder.dishNameView.text = dishes[position].name_fr
+
+        Picasso.get()
+            .load(dishes[position].getFirstPicture())
+            .error(R.drawable.ic_launcher_foreground)
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .into(holder.dishPicView)
+
+
+        holder.dishPriceView.text=dishes[position].getFormatedPrice()
+
         holder.itemView.setOnClickListener{
             onDishClicked(dishes[position])
         }
