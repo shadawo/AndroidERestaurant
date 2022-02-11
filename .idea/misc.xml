@@ -5,13 +5,22 @@
       <map>
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.259" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.259" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_basket.xml" value="0.21920289855072464" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_connection.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_dishes.xml" value="0.264" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_order.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/activity_tool.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/cell_dish_layout.xml" value="0.264" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/cell_dishes_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_dish_picture.xml" value="0.264" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/login_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/menu_basket.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/layout/view_basket.xml" value="0.21920289855072464" />
+        <entry key="..\:/Users/thiba/AndroidStudioProjects/AndroidERestaurant/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

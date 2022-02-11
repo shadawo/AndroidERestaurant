@@ -18,7 +18,7 @@ import fr.isen.ribe.androiderestaurant.models.DishModel
 import fr.isen.ribe.androiderestaurant.models.DishResult
 import org.json.JSONObject
 
-class DishesActivity : AppCompatActivity() {
+class DishesActivity : ToolActivity() {
     private lateinit var binding: ActivityDishesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

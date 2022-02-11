@@ -24,15 +24,16 @@ class DishPictureFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        arguments?.getString("picture_url")?.let {pictureUrl->
-            if(pictureUrl==""){
+        arguments?.getString("picture_url")?.let { pictureUrl ->
+            if (pictureUrl == "") {
                 binding.dishPictureFrag.setImageResource(R.drawable.ic_launcher_foreground)
+            } else {
+                Picasso.get()
+                    .load(pictureUrl)
+                    .error(R.drawable.ic_launcher_foreground)
+                    .placeholder(R.drawable.ic_launcher_foreground)
+                    .into(binding.dishPictureFrag)
             }
-            Picasso.get()
-                .load(pictureUrl)
-                .error(R.drawable.ic_launcher_foreground)
-                .placeholder(R.drawable.ic_launcher_foreground)
-                .into(binding.dishPictureFrag)
         }
     }
     companion object{
