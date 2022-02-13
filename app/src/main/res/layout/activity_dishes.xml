@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/food_background"
     tools:context=".DishesActivity">
 
     <TextView
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id= "@+id/dishRecycleView"
+        android:id="@+id/dishRecycleView"
         android:layout_width="404dp"
         android:layout_height="516dp"
         app:layout_constraintBottom_toBottomOf="parent"
